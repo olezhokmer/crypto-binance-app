@@ -55,4 +55,37 @@ Deliverables:
 Provide the source code for the Node.js application, including the test suite. 
 Include a README file with instructions on how to set up and run the application and the test suite. 
 Developer Center
+
+
+How to set it up and make it running on your local:
+
+1) Install dependencies by executing this command: npm i
+2) Run the express server by running this command: npm run dev
+
+How to use it:
+
+1) As this is a rest api, you can access server APIs using postman tool or any others
+
+API to analyze trading data and provide a singnal + trades is http://localhost:3000/api/marketing-data/signal-and-trades/BTCUSDT
+
+Send a GET request to http://localhost:3000/api/marketing-data/signal-and-trades/BTCUSDT
+
+BTCUSDT is a symbol you are retrieving a marketing data for, it can be replaces with ETHUSDT or anything else
+
+You will receive such response:
+
+{
+    "strategyInfo": {
+        "signal": "BUY",
+        "price": 92717.94
+    },
+    "trades": [...]
+}
+
+How to run unit tests:
+
+Execute the command below
+
+npm run test
+
  
